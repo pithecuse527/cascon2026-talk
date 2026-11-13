@@ -784,4 +784,4 @@ addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown','ArrowDown'].incl
  if(e.key==='t'||e.key==='T')tToggle();
  if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}});
 document.querySelector('.deck-viewport').addEventListener('click',e=>{if(e.clientX>innerWidth/2)go(i+1);else go(i-1);});
-</script></body></html>
+</script><style>.anim-ctl{display:none!important}</style><script>(function(){const _g=go;function auto(){const sl=slides[i];setTimeout(()=>{if(slides[i]===sl)asvgs(sl).forEach(x=>{try{x.unpauseAnimations()}catch(e){}});},600);}go=function(n){const p=i;_g(n);if(i!==p)auto();};window.go=go;auto();})();</script></body></html>
